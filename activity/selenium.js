@@ -46,10 +46,10 @@ tabWillBeOpenedPromise
        return interviewCardClicked;
     }).then(function (){
         //go to warmup card
-        let warmUpChallenges = tab.findElement(swd.By.css(".playlist-card.playlist-card__completed"));
-        return warmUpChallenges;
+        let allTopics = tab.findElements(swd.By.css("a[data-analytics='PlaylistCardItem']"));
+        return allTopics;
     }).then(function (warmUpCard){
-       let warmUpCardClicked = warmUpCard.click();
+       let warmUpCardClicked = warmUpCard[0].click();
        return warmUpCardClicked;
     }).then(function (){
         // console.log("Reached warm challenges page")
@@ -106,9 +106,13 @@ function questionSolver(url) {
         }).then(function () {
             // get all the lang array
             let cCodeWillBecopied = copyCode();
-            return cCodeWillBecopied;
+            return cCodeWillBecopied;   
         }).then(function (code) {
-            let codeWillBepastedP = pasteCode(code);
+            // let codeP = "";
+            // if(code != null){
+                let codeWillBepastedP = pasteCode(code);
+                // codeP = codeWillBepastedP;
+            // } 
             return codeWillBepastedP;
         })
             .then(function () {
