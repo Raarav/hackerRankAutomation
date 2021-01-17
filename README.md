@@ -7,4 +7,7 @@
 
 GIF 1 :- ![gif1](https://user-images.githubusercontent.com/33652351/104848027-1a8da400-5909-11eb-99a8-efecbf0918ec.gif)
 
+GIF 2:- ![gif2](https://user-images.githubusercontent.com/33652351/104848074-4f016000-5909-11eb-94bb-21cfd2333c92.gif)
+
+
  
