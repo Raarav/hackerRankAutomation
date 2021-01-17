@@ -5,5 +5,6 @@
 #### 3.) Nodejs Docs :- https://nodejs.org/en/docs/
 #### 4.) HTML Docs :- https://devdocs.io/html/
 
-GIF 1 :- ![Uploading gif1.gif…]()
+GIF 1 :- ![gif1](https://user-images.githubusercontent.com/33652351/104848027-1a8da400-5909-11eb-99a8-efecbf0918ec.gif)
+
  
