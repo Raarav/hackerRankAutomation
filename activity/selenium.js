@@ -107,20 +107,16 @@ function questionSolver(url) {
             // get all the lang array
             let cCodeWillBecopied = copyCode();
             return cCodeWillBecopied;   
-        }).then(function (code) {
-            // let codeP = "";
-            // if(code != null){
-                let codeWillBepastedP = pasteCode(code);
-                // codeP = codeWillBepastedP;
-            // } 
+        }).then(function (code) {        
+            let codeWillBepastedP = pasteCode(code); 
             return codeWillBepastedP;
         })
-            .then(function () {
-                resolve();
-            }).catch(function (err) {
-                console.log(err);
-                reject(err);
-            })
+        .then(function () {
+            resolve();
+        }).catch(function (err) {
+            console.log(err);
+            reject(err);
+        })
     });
 }
 
@@ -206,31 +202,31 @@ function pasteCode(code) {
             let ctrlXWillBeSendP = gcInputBox.sendKeys(swd.Key.CONTROL + "x");
             return ctrlXWillBeSendP;
         })
-            .then(function () {
-                let tAreaP = tab.findElement(swd.By.css("textarea"));
-                // console.log(2);
-                return tAreaP;
-            }).then(
-                function (tArea) {
-                    gTextArea = tArea;
-                    let CodeWillBeEP = tArea.sendKeys(swd.Key.CONTROL + "a");
-                    // console.log(3);
-                    return CodeWillBeEP;
-                }).then(function () {
-                    let ctrlVWillBeSendP = gTextArea.sendKeys(swd.Key.CONTROL + "v");
-                    return ctrlVWillBeSendP;
-                }).then(function () {
-                    let submitCodeBtnWillBeS = tab.findElement(swd.By.css("button.hr-monaco-submit"));
-                    return submitCodeBtnWillBeS;
-                }).then(function (submitBtn) {
-                    let submitBtnWillBeClickedP = submitBtn.click();
-                    return submitBtnWillBeClickedP;
-                })
-            .then(function () {
-                resolve();
-            }).catch(function (err) {
-                reject(err);
+        .then(function () {
+            let tAreaP = tab.findElement(swd.By.css("textarea"));
+            // console.log(2);
+            return tAreaP;
+        }).then(
+            function (tArea) {
+                gTextArea = tArea;
+                let CodeWillBeEP = tArea.sendKeys(swd.Key.CONTROL + "a");
+                // console.log(3);
+                return CodeWillBeEP;
+            }).then(function () {
+                let ctrlVWillBeSendP = gTextArea.sendKeys(swd.Key.CONTROL + "v");
+                return ctrlVWillBeSendP;
+            }).then(function () {
+                let submitCodeBtnWillBeS = tab.findElement(swd.By.css("button.hr-monaco-submit"));
+                return submitCodeBtnWillBeS;
+            }).then(function (submitBtn) {
+                let submitBtnWillBeClickedP = submitBtn.click();
+                return submitBtnWillBeClickedP;
             })
+        .then(function () {
+            resolve();
+        }).catch(function (err) {
+            reject(err);
+        })
         // write the code 
         // submit the code 
     })
