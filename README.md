@@ -12,8 +12,3 @@ GIF 2:- ![gif2](https://user-images.githubusercontent.com/33652351/104848074-4f0
 GIF 3:- ![gif3](https://user-images.githubusercontent.com/33652351/104848101-6b9d9800-5909-11eb-9bc6-b36fe743eb30.gif)
 
 GIF 4 :- ![gif4](https://user-images.githubusercontent.com/33652351/104848134-9b4ca000-5909-11eb-9a49-67af11e3b412.gif)
-
-
-
-
- 
